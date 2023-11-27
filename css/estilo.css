@@ -1,0 +1,223 @@
+/* Estilos Generales*/
+body {
+  margin: 0; /* Alinea el margen exterior a 0*/
+  padding: 0; /* Alinea el margen interior a 0*/
+  font-family: "Times New Roman", Times, serif; /* tipo de fuente*/
+  color: rgb(29, 2, 49); /* define el color del texto de toda la pagina*/
+  background: rgb(234, 235, 235); /* Definimos el fondo de la pagaina*/
+  line-height: 1.5em; /*interlineado (espacio entre cada linea) */
+}
+h1 {
+  font-size: 2.3em; /*Tamaño de la fuente*/
+  line-height: 1.3em;
+  margin: -18px 0; /*margin superior e inferior en 15px, margen derecho e izquierdo en 0 */
+  margin-top: 38px;
+  text-align: center; /* Alineación del texto centrado*/
+  font-weight: 300; /*Grosor del trazo*/
+}
+p {
+  margin: 0 0 1.5em 0; /*Margin arriba 0, derecho en 0, de abajo en 1.5em, el margen izquierdo en 0*/
+  text-align: justify; /* Justifica el texto */
+}
+img {
+  max-width: 100%; /*ancho maximo de 100%*/
+  height: auto; /*altura en automatico*/
+  border-radius: 15px; /* borde redondeado*/
+}
+/*Fin de los estilos generales*/
+/* Inicio Estilo del Encabezado*/
+#main-header {
+  background: rgb(10, 10, 10); /*color del fondo del encabezado*/
+  color: white; /* color del texto*/
+  height: 70px; /*define la altura del encabezado*/
+  width: 100%; /*hacemos que la cabecera ocupe el ancho completo de la pagina*/
+  left: 0; /*posicion de la cabecera al lado izquierdo*/
+  top: 0; /* posicion de la cabecera arriba */
+  position: fixed; /*hacemos que la cabecera tenga posicion fija */
+}
+#main-header a {
+  color: white; /*color del texto blanco*/
+}
+#logo-header {
+  float: left; /*flotar a la izquierda*/
+  padding: 15px 0 0 20px; /* Margen interior superior 15px, margen derecho 0px, margen inferior 0, margen izaquierdo 20px */
+  text-decoration: none; /* quitar el subrayado */
+}
+#logo-header .site-name {
+  display: block; /* convierte el elemento en bloque*/
+  font-weight: 800; /*grosor del trazo*/
+  font-size: 1.2em; /*tamaño de la fuente*/
+}
+#logo-header .site-desc {
+  display: block; /* convierte el elemento en bloque*/
+  font-weight: 300; /*grosor del trazo*/
+  font-size: 0.8em; /*tamaño de la fuente*/
+  color: grey; /*color del texto*/
+}
+/* Navegación */
+nav {  /*Estilo de la etiqueta nav */
+  float: right; /* flotar a la derecha */
+}
+nav ul {  /* Estilo de la etiqueta ul que esta dentro de la etiqueta nav */
+  list-style: none; /* estilo de la lista deshabilitado, osea no tendra subrayado ni biñeta */
+  margin-right: 20px;
+}
+nav ul li {  /*Estilo de la etiqueta li que esta dentro de la etiqueta ul */
+  display: inline-block; /* se comporta como elemento de linea y elemento de bloque */
+  line-height: 40px; /* Interlineado o espacio entre cada linea */
+  margin: 0 5px;
+}
+nav ul li a {  /* Estilo de la etiqueta a que esta dentro de la etiqueta li */
+  color: white;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 6px;
+  text-transform: uppercase; /*coloca el texto en Mayuscula*/
+  text-decoration: none;
+}
+nav ul li a:hover { /*Efecto cuando el mouse pasa sobre el enlace*/
+  background: rgb(255, 0, 0);
+  transition: 0.2s; /* Efecto de transision que demora en mostrarse*/
+  font-weight: bolder;  
+}
+/*Boton para el Menu Responsivo*/
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-top: 25px;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none; /*Ocultar el label*/
+}
+/* Fin Estilo del Encabezado*/
+/*Inicio de Estilos para el Contenido */
+#main-content {
+  background: white;
+  width: 90%; /*ancho en 90% de la pagina*/
+  max-width: 800px; /*maximo de ancho de la pagina*/
+  margin: 20px auto; /*margen exterior vertical en 20px*, margen exterior horizontal en auto (Centrado) */
+  box-shadow: 0 0 50px rgb(31, 30, 30); /*establece sombra al contenedor*/
+  border-radius: 15px;
+}
+#main-content header,
+#main-content .content {
+  padding: 40px; /* colocar margen interior  en 40px*/
+}
+.contenedor-servicios {
+  display: flex; /*coloca el contenido al lado del otro*/
+  justify-content: space-around; /* da espacio entre contenedores */
+  flex-wrap: wrap;
+  color: #fff;
+}
+.servicio {
+  width: 35%;
+  padding: 34px 30px 38px 30px;
+  border-radius: 10px; /* establece bordes redondeados*/
+  margin-bottom: 40px; /*establece la separacion con el contendor de abajo*/
+  position: relative; /**/
+}
+.servicio p {
+  margin-bottom: 20px;
+  height: 194px;
+}
+.contenedor-servicios .violeta {
+  background: linear-gradient(to bottom,
+  rgb(125, 33, 247),
+  rgb(10, 204, 253),
+  rgb(125, 33, 247));
+  box-shadow: 0 12px 30px 0 rgb(92, 5, 255); /*Sombra */
+}
+.contenedor-servicios .celeste {
+  background: linear-gradient(to bottom,
+  rgb(3, 139, 250),
+  rgb(10, 225, 253),
+  rgb(3, 139, 250));
+  box-shadow: 0 12px 30px 0 rgb(5, 113, 255);
+}
+/* Fin de Estilos para el Contenido */
+
+/* Inicio Estilo para el Pie de pagina*/
+#main-footer {
+  background: rgb(2, 2, 2);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+#main-footer p {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+#main-footer a {
+  color: white;
+}
+/* Fin Estilo para el Pie de pagina*/
+
+/* define los estilos cuando la pantalla reduce de tamaño*/
+@media (max-width: 850px) {
+  #main-content .servicio {
+    width: 90%;
+  }
+  /*Boton de hamburguesa*/
+  .checkbtn {
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 5px;
+    font-size: 60px;
+  }
+  ul {
+    position: fixed; /*posicion fija*/
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 54px;
+    left: -108%;
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    padding: 2%;
+    height: 35px;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  li:hover,
+  :active {
+   /* background: rgb(60, 21, 151);*/
+   background: linear-gradient(
+    to bottom,
+    rgb(71, 0, 163),
+    rgb(10, 204, 253),
+    rgb(71, 0, 163)
+  );
+  border-radius: 5px;
+    margin-left: 0;
+  }
+
+  nav ul li a:hover {
+    background: none;
+  }
+
+  #check:checked ~ ul {
+    left: -40px; /*Ancho de cada item de la lista*/
+  }
+}
+
+
+
+/*--------------------------------*/
+
+
